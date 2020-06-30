@@ -131,6 +131,21 @@ html, body {
   color: #d5d5d5;
 }
 
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-youtube,
+.fa-users,
+.fa-check, 
+.fa-user,
+.fa-graduation-cap,
+.fa-heart,
+.fa-handshake {
+  text-rendering: optimizeLegibility;
+}
+
+
+
 .footer {
   
   background: linear-gradient(180deg, orange,white,green);
