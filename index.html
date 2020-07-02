@@ -53,8 +53,8 @@
 	<div class="dropup">
 		<button class="dropbtn">Language</button>
 		<div class="dropup-content">
-			<button onclick="timeFunction()"><a href="#eng" data-reload>English</a></button>
-			<button onclick="timeFunction()"><a href="#ta" data-reload>&nbspTamil&nbsp&nbsp</a></button>
+			<button onclick="reloadPage()"><a href="#eng" data-reload>English</a></button>
+			<button onclick="reloadPage()"><a href="#ta" data-reload>&nbspTamil&nbsp&nbsp</a></button>
 		</div>
 	  </div>
 	
@@ -309,9 +309,13 @@ if(window.location.hash) {
 		social.textContent = language8.ta.social;
 	}
 }
-function timeFunction() {
-		   setTimeout(function(){ history.go(0); }, 1000);
-         }
+
+		 
+function reloadPage() {
+  setTimeout(function () {
+    location.reload();
+  }, 100);
+}
 </script>
 
 
