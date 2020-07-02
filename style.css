@@ -293,7 +293,6 @@ text-align: center;
 .dropup {
   position: fixed;
   display: inline-block;
-  border-radius: 5px;
   z-index: 1;
   bottom: -4px;
     right: 5px;
