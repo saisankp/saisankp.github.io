@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Membership</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
 	<link rel="shortcut icon" type= "image/png" href="https://i.imgur.com/E6kerC5.png">
 </head>
@@ -32,54 +33,55 @@
                     <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="tamilschool.html">Tamil School</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="competition.html">Competition</a>
-                </li>
-                <li class="nav-item active">
                     <a class="nav-link" href="membership.html">Membership</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="events.html">Events</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="donate.html">Donation</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="volunteer.html">Volunteer</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="socialmedia.html">Social Media</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="https://www.gofundme.com/f/a-thanksgiving-to-our-frontline-healthcare-heroes" target="_blank">Donate to Frontline Heros</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="feedback.html">Feedback</a>
                 </li>
             </ul>
         </div>
         </div>
         </nav>
 
+
+
+        <div class="dropup">
+            <button class="dropbtn">Language</button>
+            <div class="dropup-content">
+                <button onclick="timeFunction()"><a href="#eng" data-reload>English</a></button>
+                <button onclick="timeFunction()"><a href="#ta" data-reload>&nbspTamil&nbsp&nbsp</a></button>
+            </div>
+          </div>
+        
+
+
  <!--- WHO WE ARE --->
 
- <ul class="noList">
-    <li><a href="#BENEFITS">Benefits</a></li>
-    <li><a href="#SAMPLE">Sample Activities</a></li>
-    <li><a href="#NEW">New Membership</a></li>
-    <li><a href="#RENEW">Renew Membership</a></li>
-</ul>
 
- <div class="container-fluid padding"> 
-    <div class="row welcome text-center">
-        <div class="col-12">
-            <h1 class="display-4">Be a Member.</h1>
+
+
+
+
+
+ 
+    <div class="centerbutton">
+        <div class="dropup3">
+            <button type="button" class="btn btn-success btn-lg" class="dropbtn3" style="color: black">Membership ↲</button>
+            <div class="dropup-content3">
+                <li class="list-group-item"><a href="#BENEFITS">Benefits</a></li>
+        <li class="list-group-item"><a href="#SAMPLE">Sample Activities</a></li>
+        <li class="list-group-item"><a href="#NEW">New Membership</a></li>
+        <li class="list-group-item"><a href="#RENEW">Renew Membership</a></li>
+            </div>
+          </div>
         </div>
-        <hr>
-        <div class="col-12">
-            <p class="FAQ">Membership is free till December 2018 and paid membership to start from 01/January/2019. <br>
+
+            <h1 style= "font-family: Arima Madurai" class="FAQ" id="Membertitle">Be a Member.</h1>
+        
+        <hr class="light">
+        
+   
+            <p class="FAQ" id="Membershipinfo">Membership is free till December 2018 and paid membership to start from 01/January/2019. <br>
 
                 Membership cost: <br>
                 
@@ -90,9 +92,8 @@
                 5. Long-term membership (5 years) € 100 euros  <br>
                 6. For Group membership, directly contact the Sangam.</p>
             
-            </div>
-    </div>
-    </div>
+            
+    
     <h2 class="FAQ" id="NEW">New Membership</h2>
 <hr class="light">
 <div class="container-fluid padding">
@@ -193,9 +194,9 @@
 
 
 <!--- BENEFITS --->
-<h2 class="FAQ" id="BENEFITS">Benefits</h2>
-<hr class="light">
-<p class="regularText">
+<h2 style= "font-family: Arima Madurai" class="FAQ" id="BENEFITS" >Benefits</h2>
+<hr style= "font-family: Arima Madurai" class="light">
+<p class="regularText" id="Benefitstext">
     Ireland Tamil Sangam (ITS) – Benefits are aligned with our Sangam’s four objectives for all County members across the Republic of Ireland as listed below. <br><br>
     
     Education: Access to Basic Tamil Language Support, Educational Programmes, and Workshops conducted by ITS for children and all age groups. <br><br>
@@ -212,44 +213,101 @@
     Discounted tickets for ITS conducted Events & Programmes.<br><br>
     Note: Four workshops will be conducted for every year and all benefits are subject to resources available and minimum membership requirements. For more details please contact IrishTamilSangam@Gmail.com.<br><br>
 
-</p>
-<hr class="light">
-<p class="regularText">அயர்லாந்து தமிழ் சங்கம் தமது உறுப்பினர்களுக்கு வழங்கும் தலையாய பணிகளில் ஒரு சில பின்வருமாறு: <br><br> 
-    அயர்லாந்தின் அனைத்து பகுதிகளிலும் வாழும் தமிழ் மக்களின் நலன் சார்ந்து சங்கத்தின் இலக்குகள் வரையறுக்கப்பட்டுள்ளது. <br><br>
 
-    1. கல்வி: அயர்லாந்தில் வாழும் தமிழ் குழந்தைகள் மற்றும் அனைத்து வயதினருக்கும் தொடர் தமிழ் வகுப்புகளை ஏற்படுத்தி   தமிழ் மொழிப்  பயிற்சி அளித்து, அவர்களை தேர்ச்சி பெற்றவர்களாக மாற்றுதல்.   மேல்நிலைப் பள்ளி / கல்லூரி மாணவர்களுக்கு உயர் கல்வி ஆலோசனை  வழங்குதல் <br><br>
-    2. சமூக நலம்: பொருளாதாரத்தில் பின்தங்கிய குடும்பங்களின் துன்ப நிகழ்வுகளிலும், இக்கட்டான சூழல்களிலும் நமது முழு ஆதரவையும், பொருளாதார உதவிகளையும் வழங்கி, ஒருவருக்கொருவர் மேலான அன்பையும், ஆலோசனைகளையும் பகிர்ந்து கொள்ளுதல். <br><br>
-    3. ஒருங்கிணைப்பு: அயர்லாந்தில் வெவ்வேறு இடங்களில் வசிக்கும் தமிழர்கள் குறிப்பாக புதிதாக குடியேறியவர்கள் எளிதில் சக தமிழ் மக்களுடன் இணைய வழி வகைகளை ஏற்படுத்துதல். தமிழ் மக்கள் தங்கள் சமூக உறவுகளை மேம்படுத்த ஒரு பொதுவெளியை ஏற்படுத்தி, ‘பரஸ்பர நன்மைகள்’ கிடைக்க உதவுதல். <br><br>
-    4. கலாச்சாரம் மற்றும் பண்பாடு: இயல், இசை, நாடகம் போன்ற கலை இலக்கிய நிகழ்வுகளுக்கான வாய்ப்புகளை ஏற்படுத்துதல். <br><br>
-   
-    பாரம்பரிய மரபு விளையாட்டுகளை ஊக்கப்படுத்துதல். எடுத்துக்காட்டாக பல்லாங்குழி, சடுகுடு(கபடி ), சிலம்பம். <br><br>
+    <script>
+        var dataReload = document.querySelectorAll("[data-reload]");
     
-    5. சமூக நலம் சார்ந்தபயிற்சிப்பட்டறைகளை நடத்துதல் (மருத்துவ ஆலோசனை / குடி வரவு / குழந்தை நல உதவி / சட்ட ஆலோசனை /  வீட்டுக் கடன் ஆலோசனை) <br> <br>
-   
-    உறுப்பினர்களுக்கு நன்மை பயக்கும் வேறு பிற செயல்பாடுகள்: <br> <br>
     
-    6. உறுப்பினர்கள் அயர்லாந்து தமிழ்ச் சங்க சமூக வலைதளங்களில் (வலைதளம் / முகநூல் / வாட்ஸ் ஆப் / டிவிட்டர்) தங்களை இணைத்துக் கொண்டு அதன் மூலம் தங்களது கருத்துக்களை மற்ற உறுப்பினர்களிடம் பகிர்ந்து, உரையாடுவதன் மூலம் புதிய தொடர்புகளை ஏற்படுத்திக் கொள்ள வழிவகை செய்தல். <br> <br>
-    7. செயற்குழு உறுப்பினர்களைத் தேர்ந்தெடுக்கும் வாக்குரிமை, தமிழ்ச் சங்க செயல் திட்டங்களைப் பரிந்துரைக்கும் வாய்ப்பு மற்றும் தமிழ்ச் சங்க விதிமுறைகளுக்கு உட்பட்டு சங்க செயற்குழு பதவிகளுக்குப் போட்டியிடும் வாய்ப்பையும் வழங்குதல். <br> <br>
-    8. நம் தாய் நிலம் தமிழ்நாடு, இந்தியா மற்றும் அயர்லாந்தில் தமிழ்ச் சங்கம் முன்னெடுக்கும் தொண்டு மற்றும் சமூகப் பணிகளில் பங்காற்றும் வாய்ப்பை உறுப்பினர்களுக்கு வழங்குதல்.9. அயர்லாந்து தமிழ்ச் சங்கத்தின் நிகழ்வுகள் மற்றும் பிற சமூக நிகழ்வுகளுக்கான முன்னறிவிப்புகளை மின்னஞ்சல் மூலம் உறுப்பினர்களுடன் பகிர்ந்து கொள்ளுதல். <br> <br>
-    9. அயர்லாந்து தமிழ்ச் சங்கம் நடத்தும் நிகழ்ச்சிகளுக்கான நுழைவுச் சீட்டுகளை சலுகை விலையில் பெற ஆவண செய்தல்.குறிப்பு: ஓர் ஆண்டிற்கு நான்கு பயிற்சிப் பட்டறைகள் திட்டமிடப்பட்டுள்ளது. இதில் உறுப்பினர்கள் பங்குபெற்றுப் பயன்பெறலாம். இதன் அனுமதி அந்தந்த பயிற்சிப் பட்டறைகளுக்காக நிர்ணயித்த இடங்களைப் பொறுத்தும், உறுப்பினர்களின் குறைந்தபட்ச தகுதியைப் பொறுத்தும் முடிவெடுக்கப்படும். <br> <br>
+    var language = {
+        eng: {
+           Membertitle: "Be a member."
+        
+            
+        },
+        ta: {
+            Membertitle: "உறுப்பினராக இருங்கள்"
+        }
+    };
     
-    மேலதிக விபரங்களுக்கு IrishTamilSangam@Gmail.com என்ற மின்னஞ்சலைத் தொடர்பு கொள்ளலாம். <br> <br>
+    var language2 = {
+        eng: {
+            Membershipinfo: "Membership is free till December 2018 and paid membership to start from 01/January/2019. <br> Membership cost: <br> 1. Family membership € 30 euros per annum <br> 2. Single membership €15 euros per annum <br> 3. Student membership €10 euros per annum <br> 4. Senior membership €10 euros per annum <br> 5. Long-term membership (5 years) € 100 euros  <br> 6. For Group membership, directly contact the Sangam.</p>"
+            
+        },
+        ta: {
+            Membershipinfo: "உறுப்பினர் சேர்க்கை டிசம்பர் 2018 வரை இலவசம் மற்றும் கட்டண உறுப்பினர் 01 / ஜனவரி / 2019 முதல் தொடங்கப்படும். உறுப்பினர் செலவு:"  + " குடும்ப உறுப்பினர் ஆண்டுக்கு 30 யூரோக்கள், ஒற்றை உறுப்பினர் ஆண்டுக்கு 15 யூரோக்கள், மாணவர் உறுப்பினர் ஆண்டுக்கு 10 யூரோக்கள், மூத்த உறுப்பினர் ஆண்டுக்கு 10 யூரோக்கள், நீண்ட கால உறுப்பினர் (5 ஆண்டுகள்) € 100 யூரோக்கள், குழு உறுப்பினர்களுக்கு, சங்கத்தை நேரடியாக தொடர்பு கொள்ளவும்."
+        }
+    };
     
-    உறுப்பினர் சேர்க்கை: <br>
-    வருகின்ற 14-ஜனவரி -2019 வரை உறுப்பினர்கள் இலவச உறுப்பினர் சலுகையைப் பெறலாம்.  தைப்பொங்கல் நாள் (15- ஜனவரி-2019) முதல் பின் காணும் உறுப்பினர் சந்தா நடைமுறைக்கு வரும்.
+    var language3 = {
+        eng: {
+            BENEFITS: "Benefits"
+            
+        },
+        ta: {
+            BENEFITS: "நன்மைகள்"
+        }
+    };
     
-    உறுப்பினர் சந்தா: <br>
+    var language4 = {
+        eng: {
+            Benefitstext: "Ireland Tamil Sangam (ITS) – Benefits are aligned with our Sangam’s four objectives for all County members across the Republic of Ireland as listed below. Education: Access to Basic Tamil Language Support, Educational Programmes, and Workshops conducted by ITS for children and all age groups. Welfare: Access to ITS Member’s Emergency Support (Moral/Logistics/Emotional/Financial). Integration: A greater opportunity to unite and network with Ireland Tamil Community for ‘Mutual Benefits’ especially for Children development & integration. Culture: Access to Tamil Cultural Programmes and Workshops (Arts/Music/Dance & Martial Arts/Traditional Sports) conducted by ITS for all age groups. All: Access to ITS community Welfare Workshops on various topics useful to the community. (Health, New to Ireland, Student counseling, School Leaving Cert Support, Mortgage etc.) Some of other benefits including… Access to ITS Digital Media Platform (Website/FB/WhatsApp/Twitter) where members can share/interact information with hundreds of Tamil community members. Voting rights to elect board members, influence ITS activities and contest on ITS elections (per bylaws). Be part of ITS ‘Giving’ programmes for charitable and social causes in Tamil Nadu, India, and Ireland. Receive email notifications for all ITS and other Community Events. Discounted tickets for ITS conducted Events & Programmes. Note: Four workshops will be conducted for every year and all benefits are subject to resources available and minimum membership requirements. For more details please contact IrishTamilSangam@Gmail.com."
+            
+        },
+        ta: {
+            Benefitstext: "அயர்லாந்து தமிழ் சங்கம் தமது உறுப்பினர்களுக்கு வழங்கும் தலையாய பணிகளில் ஒரு சில பின்வருமாறு: அயர்லாந்தின் அனைத்து பகுதிகளிலும் வாழும் தமிழ் மக்களின் நலன் சார்ந்து சங்கத்தின் இலக்குகள் வரையறுக்கப்பட்டுள்ளது. கல்வி: அயர்லாந்தில் வாழும் தமிழ் குழந்தைகள் மற்றும் அனைத்து வயதினருக்கும் தொடர் தமிழ் வகுப்புகளை ஏற்படுத்தி தமிழ் மொழிப் பயிற்சி அளித்து, அவர்களை தேர்ச்சி பெற்றவர்களாக மாற்றுதல். மேல்நிலைப் பள்ளி / கல்லூரி மாணவர்களுக்கு உயர் கல்வி ஆலோசனை வழங்குதல். சமூக நலம்: பொருளாதாரத்தில் பின்தங்கிய குடும்பங்களின் துன்ப நிகழ்வுகளிலும், இக்கட்டான சூழல்களிலும் நமது முழு ஆதரவையும், பொருளாதார உதவிகளையும் வழங்கி, ஒருவருக்கொருவர் மேலான அன்பையும், ஆலோசனைகளையும் பகிர்ந்து கொள்ளுதல். ஒருங்கிணைப்பு: அயர்லாந்தில் வெவ்வேறு இடங்களில் வசிக்கும் தமிழர்கள் குறிப்பாக புதிதாக குடியேறியவர்கள் எளிதில் சக தமிழ் மக்களுடன் இணைய வழி வகைகளை ஏற்படுத்துதல். தமிழ் மக்கள் தங்கள் சமூக உறவுகளை மேம்படுத்த ஒரு பொதுவெளியை ஏற்படுத்தி, ‘பரஸ்பர நன்மைகள்’ கிடைக்க உதவுதல். கலாச்சாரம் மற்றும் பண்பாடு: இயல், இசை, நாடகம் போன்ற கலை இலக்கிய நிகழ்வுகளுக்கான வாய்ப்புகளை ஏற்படுத்துதல். பாரம்பரிய மரபு விளையாட்டுகளை ஊக்கப்படுத்துதல். எடுத்துக்காட்டாக பல்லாங்குழி, சடுகுடு(கபடி ), சிலம்பம். சமூக நலம் சார்ந்தபயிற்சிப்பட்டறைகளை நடத்துதல் (மருத்துவ ஆலோசனை / குடி வரவு / குழந்தை நல உதவி / சட்ட ஆலோசனை / வீட்டுக் கடன் ஆலோசனை) உறுப்பினர்களுக்கு நன்மை பயக்கும் வேறு பிற செயல்பாடுகள்: உறுப்பினர்கள் அயர்லாந்து தமிழ்ச் சங்க சமூக வலைதளங்களில் (வலைதளம் / முகநூல் / வாட்ஸ் ஆப் / டிவிட்டர்) தங்களை இணைத்துக் கொண்டு அதன் மூலம் தங்களது கருத்துக்களை மற்ற உறுப்பினர்களிடம் பகிர்ந்து, உரையாடுவதன் மூலம் புதிய தொடர்புகளை ஏற்படுத்திக் கொள்ள வழிவகை செய்தல். செயற்குழு உறுப்பினர்களைத் தேர்ந்தெடுக்கும் வாக்குரிமை, தமிழ்ச் சங்க செயல் திட்டங்களைப் பரிந்துரைக்கும் வாய்ப்பு மற்றும் தமிழ்ச் சங்க விதிமுறைகளுக்கு உட்பட்டு சங்க செயற்குழு பதவிகளுக்குப் போட்டியிடும் வாய்ப்பையும் வழங்குதல். நம் தாய் நிலம் தமிழ்நாடு, இந்தியா மற்றும் அயர்லாந்தில் தமிழ்ச் சங்கம் முன்னெடுக்கும் தொண்டு மற்றும் சமூகப் பணிகளில் பங்காற்றும் வாய்ப்பை உறுப்பினர்களுக்கு வழங்குதல்.9. அயர்லாந்து தமிழ்ச் சங்கத்தின் நிகழ்வுகள் மற்றும் பிற சமூக நிகழ்வுகளுக்கான முன்னறிவிப்புகளை மின்னஞ்சல் மூலம் உறுப்பினர்களுடன் பகிர்ந்து கொள்ளுதல். அயர்லாந்து தமிழ்ச் சங்கம் நடத்தும் நிகழ்ச்சிகளுக்கான நுழைவுச் சீட்டுகளை சலுகை விலையில் பெற ஆவண செய்தல்.குறிப்பு: ஓர் ஆண்டிற்கு நான்கு பயிற்சிப் பட்டறைகள் திட்டமிடப்பட்டுள்ளது. இதில் உறுப்பினர்கள் பங்குபெற்றுப் பயன்பெறலாம். இதன் அனுமதி அந்தந்த பயிற்சிப் பட்டறைகளுக்காக நிர்ணயித்த இடங்களைப் பொறுத்தும், உறுப்பினர்களின் குறைந்தபட்ச தகுதியைப் பொறுத்தும் முடிவெடுக்கப்படும். மேலதிக விபரங்களுக்கு IrishTamilSangam@Gmail.com என்ற மின்னஞ்சலைத் தொடர்பு கொள்ளலாம். உறுப்பினர் சேர்க்கை: வருகின்ற 14-ஜனவரி -2019 வரை உறுப்பினர்கள் இலவச உறுப்பினர் சலுகையைப் பெறலாம். தைப்பொங்கல் நாள் (15- ஜனவரி-2019) முதல் பின் காணும் உறுப்பினர் சந்தா நடைமுறைக்கு வரும். உறுப்பினர் சந்தா: ஒரு குடும்பத்திற்கான ஆண்டுச் சந்தா €. 30 யூரோ மட்டும், தனி நபர் ஆண்டுச் சந்தா €.15 யூரோ மட்டும், மாணவர் ஆண்டுச் சந்தா €.10 யூரோ மட்டும், மூத்த குடிமக்களுக்கான தனிநபர் ஆண்டுச் சந்தா €.10 யூரோ மட்டும்., நிலையான கால உறுப்பினர் சந்தா (ஐந்து ஆண்டுகள்) €.100 யூரோ மட்டும்."
+        }
+    };
     
-    i. ஒரு குடும்பத்திற்கான ஆண்டுச் சந்தா €. 30 யூரோ மட்டும். <br>
-    ii. தனி நபர் ஆண்டுச் சந்தா €.15 யூரோ மட்டும். <br>
-    iii. மாணவர் ஆண்டுச் சந்தா €.10 யூரோ மட்டும். <br>
-    iv. மூத்த குடிமக்களுக்கான தனிநபர் ஆண்டுச் சந்தா €.10 யூரோ மட்டும். <br>
-    V. நிலையான கால உறுப்பினர் சந்தா (ஐந்து ஆண்டுகள்) €.100 யூரோ மட்டும். <br><br></p>
+    if(window.location.hash) {
+        if(window.location.hash === "#ta") {
+            Membertitle.textContent = language.ta.Membertitle;
+        }
+    }
+    
+    if(window.location.hash) {
+        if(window.location.hash === "#ta") {
+            Membershipinfo.textContent = language2.ta.Membershipinfo;
+        }
+    }
+
+    if(window.location.hash) {
+        if(window.location.hash === "#ta") {
+            BENEFITS.textContent = language3.ta.BENEFITS;
+        }
+    }
+    if(window.location.hash) {
+        if(window.location.hash === "#ta") {
+            Benefitstext.textContent = language4.ta.Benefitstext;
+        }
+    }
+    
+    
+    
+    function timeFunction() {
+               setTimeout(function(){ history.go(0); }, 200);
+             }
+    </script>
+    
 
 
-    <h2 class="FAQ" id="SAMPLE">Sample Activities</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 style= "font-family: Arima Madurai" class="FAQ" id="SAMPLE">Sample Activities</h2>
     <hr class="light">
-    <p class="regularText">
+    <p style= "font-family: Arima Madurai" class="regularText">
         <u>(Education) கற்போம் கற்பிப்போம் – குழந்தைகள் மற்றும் இளைஞர்களை நாட்டின் முன்மாதிரியாக உருவாக்குவோம்.</u> <br><br>
 
          -> Tamil literacy programme – basic support (speak/read/write)<br><br>
@@ -296,7 +354,7 @@
     <div class="row text-center">
         <div class="col-12">
             <div class="FooterContent">
-            <a href="index.html"><img src="img/ITSLOGO4.png"></a>
+            <a href="index.html"><img src="img/ITSLOGO2.png" class="footerlogo"></a>
             <hr class="light">
             <p>(+353) 894514190</p>
             <p>IrishTamilSangam@gmail.com</p>
