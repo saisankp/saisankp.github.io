@@ -170,7 +170,8 @@ html, body {
 
 }
 .languagebutton {
-  text-align:center;
+  display:flex;
+    justify-content:center;
 }
 .regularText {
   text-align:justify;
@@ -285,9 +286,6 @@ text-align: center;
 
 
 
-.dropdown-menu{
-  width: 20px;
-}
 /* Dropup Button */
 .dropbtn {
   background-color: #3373FF;
