@@ -6,14 +6,41 @@
 	<title>Ireland Tamil Sangam</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link rel="shortcut icon" type= "image/png" href="https://i.imgur.com/E6kerC5.png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<script src="myscript.js"></script>
-	<link href="style.css" rel="stylesheet">
-	<link rel="shortcut icon" type= "image/png" href="https://i.imgur.com/E6kerC5.png">
+	<script src="test.js"></script>
+	<script type="text/javascript" src="jquery-3.5.1.js"></script>
+	<script type="text/javascript">
+		var arrLang = {
+			'en' : {
+				'kodaivizha' : 'Past Events: Kodai Vizha',
+				'kodaivizha2' : 'Kodai Vizha 2020 is a summer festival celebrated by Tamils around the world.'
+			},
+			'ta' : {
+				'kodaivizha' : "கடந்த நிகழ்வுகள்: கோடாய் விசா",
+				'kodaivizha2' : 'கோடை விழாவைக் கொண்டாட எங்களுடன் சேருங்கள்'
+			}
+		};
+		
+	$(function() {
+		$('.translate').click(function(){
+			var lang = $(this).attr('id');
+	
+			$('.lang').each(function(index, element){
+			$(this).text(arrLang[lang][$(this).attr('key')])
+		  });
+		});
+	  });
 
+	
+
+
+	</script>
+	
 </head>
 <body>
 
@@ -49,15 +76,15 @@
 	</div>
 	</nav>
 
-<!--
+
 	<div class="dropup">
 		<button class="dropbtn">Language</button>
 		<div class="dropup-content">
-			<button onclick="reloadPage()"><a href="#eng" data-reload>English</a></button>
-			<button onclick="reloadPage()"><a href="#ta" data-reload>&nbspTamil&nbsp&nbsp</a></button>
+			<button ><a id="en" data-reload>English</a></button>
+			<button ><a id="ta" data-reload>&nbspTamil&nbsp&nbsp</a></button>
 		</div>
 	  </div>
-	-->
+	
 	
 <!--- Image Slider -->
 <div id="slides" class="carousel slide" data-ride="carousel">
@@ -92,8 +119,8 @@
 <!--- Jumbotron -->
 <div class="container">
     <div class="jumbotron">
-        <h1 style= "font-family: Arima Madurai" class="FAQ" id="kodaivizha">Past Events: Kodai Vizha</h1>
-        <p style= "font-family: Arima Madurai" class="FAQ" id="kodaivizhatext">
+        <h1 key="kodaivizha" id="kodaivizha" style= "font-family: Arima Madurai" class="FAQ">Past Events: Kodai Vizha</h1>
+        <p key="kodaivizhatext" id="kodaivizhatext" style="font-family: Arima Madurai" class="FAQ">
             Kodai Vizha 2020 is a summer festival celebrated by Tamils around the world.
         </p>
         <p>
@@ -180,6 +207,7 @@
 </div>
 
 <script>
+	/*
 	var dataReload = document.querySelectorAll("[data-reload]");
 	var language8 = {
 	eng: {
@@ -317,6 +345,7 @@ function reloadPage() {
     location.reload();
   }, 100);
 }
+*/
 </script>
 
 
@@ -345,8 +374,4 @@ function reloadPage() {
 </div>
 </body>
 </html>
-
-
-
-
 
