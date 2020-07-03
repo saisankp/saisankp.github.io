@@ -169,6 +169,9 @@ html, body {
   margin: 20px 0 !important;
 
 }
+.languagebutton {
+  text-align:center;
+}
 .regularText {
   text-align:justify;
   word-break:keep-all;
@@ -278,6 +281,12 @@ text-align: center;
 .listleft {
   width: 12%;
   float: left;
+}
+
+
+
+.dropdown-menu{
+  width: 20px;
 }
 /* Dropup Button */
 .dropbtn {
