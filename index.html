@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ireland Tamil Sangam</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link rel="shortcut icon" type= "image/png" href="https://i.imgur.com/E6kerC5.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="test.js"></script>
+	<script type="text/javascript" src="jquery-3.5.1.js"></script>
+	<script type="text/javascript">
+		var arrLang = {
+			'en' : {
+				'kodaivizha' : 'Past Events: Kodai Vizha',
+				'kodaivizha2' : 'Kodai Vizha 2020 is a summer festival celebrated by Tamils around the world.'
+			},
+			'ta' : {
+				'kodaivizha' : "கடந்த நிகழ்வுகள்: கோடாய் விசா",
+				'kodaivizha2' : 'கோடை விழாவைக் கொண்டாட எங்களுடன் சேருங்கள்'
+			}
+		};
+		
+	$(function() {
+		$('.translate').click(function(){
+			var lang = $(this).attr('id');
+	
+			$('.lang').each(function(index, element){
+			$(this).text(arrLang[lang][$(this).attr('key')])
+		  });
+		});
+	  });
+
+	
+
+
+	</script>
+	
+</head>
+<body>
+
+<!-- The whole site currently contains 2,538 lines of code. -->
+
+
+
+<!-- Navigation -->
+<nav class="navbar narvar-expand-md navbar-light bg-light sticky-top">
+<div class="container-fluid">
+	<a class="navbar-brand" href="index.html"><img src="img/ITSLOGO2.png" class="logo"></a>
+	<!--– TITLE --->
+	<a href="index.html"><img src="img/ITSImage.PNG" class="ITSBanner"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="index.html">Home</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="about.html">About Us</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="membership.html">Membership</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="events.html">Events</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+	</nav>
+
+<div class="dropup">
+	<div class="dropdown">
+		<button class="dropdown-toggle btn btn-primary btn-sm" data-toggle="dropdown">
+			Language <span class="caret"></span>
+		</button>
+
+		<ul class="dropdown-menu">
+			<li class="languagebutton"><a style="color:black;" href="#" id="en"><strong><u>English</u></strong></a></li>
+			<li class="languagebutton"><a style="color:black;" href="#" id="ta"><strong><u>Tamil</u></strong></li>
+		</ul>
+
+
+
+
+	</div>
+</div>
+
+<!--
+	<div class="dropup">
+		<button class="dropbtn">Language</button>
+		<div class="dropup-content">
+			<button ><a id="en" data-reload>English</a></button>
+			<button ><a id="ta" data-reload>&nbspTamil&nbsp&nbsp</a></button>
+		</div>
+	  </div>
+	--> 
+	
+<!--- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+<ul class="carousel-indicators">
+	<li data-target="#slides" data-slide-to="0" class="active"></li>
+	<li data-target="#slides" data-slide-to="1"></li>
+	<li data-target="#slides" data-slide-to="2"></li>
+	<li data-target="#slides" data-slide-to="3"></li>
+	<li data-target="#slides" data-slide-to="4"></li>
+</ul>
+<div class="carousel-inner">
+	<div class="carousel-item active">
+		<img src="img/SLIDE1.png">
+	</div>
+	<div class="carousel-item">
+		<a href="kodaivizha.html"><img src="img/SLIDE2.png"></a>
+	</div>
+	<div class="carousel-item">
+		<a href="kodaivizha.html"><img src="img/SLIDE3.png"></a>
+	</div>
+	<div class="carousel-item">
+		<a href="kodaivizha.html"><img src="img/SLIDE4.png"></a>
+	</div>
+	<div class="carousel-item">
+		<a href="kodaivizha.html"><img src="img/SLIDE5.png"></a>
+	</div>
+</div>
+</div>
+<br>
+
+
+<!--- Jumbotron -->
+<div class="container">
+    <div class="jumbotron">
+        <h1 key="kodaivizha" id="kodaivizha" style= "font-family: Arima Madurai" class="FAQ">Past Events: Kodai Vizha</h1>
+        <p key="kodaivizhatext" id="kodaivizhatext" style="font-family: Arima Madurai" class="FAQ">
+            Kodai Vizha 2020 is a summer festival celebrated by Tamils around the world.
+        </p>
+        <p>
+			<div style="text-align:center;">
+            <a style= "font-family: Arima Madurai" class="btn btn-lg btn-primary" class="centerimage" href="kodaivizha.html" id="kodaivizhabutton">
+                Learn more.
+			</a>
+		</div>
+        </p>
+    </div>
+</div>
+
+
+
+<!--- Welcome Section -->
+<div class="container-fluid padding"> 
+<div class="row welcome text-center">
+	
+	<div class="col-12">
+		<h1 style= "font-family: Arima Madurai" class="display-4" id="title">Ireland Tamil Sangam</h1>
+	</div>
+	<hr>
+	<div class="col-12">
+		<p style= "font-family: Arima Madurai" class="aligntext" id="hi"> Ireland Tamil Sangam’s mission is to identify all Tamils, to associate and integrate them with us and act as a shelter to promote the well-being of the community with the support of all people. It's aim is to perpetuate, integrate, and assimilate the cultural heritage of Tamil speaking people into Irish culture.</p>
+	</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!--- Three Column Section -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+	<div class="col-12">
+		<i class="fas fa-handshake"></i>
+		<h3 style= "font-family: Arima Madurai" id="wecare">We Care.</h3>
+		<p style= "font-family: Arima Madurai" id="wecaretext">Our goal is to support all Tamil people in Ireland.</p>
+	</div>
+</div>
+<hr class="my-4">
+</div>
+
+
+
+<!--- Two Column Section -->
+
+
+<!--- Fixed background -->
+
+
+<!--- Emoji Section -->
+
+  
+<!--- Meet the team -->
+
+
+<!--- Cards -->
+
+
+<!--- Two Column Section -->
+
+
+<!--- Connect -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+	<div class="col-12"> 
+		<h2 style= "font-family: Arima Madurai" id="social">Connect with us on Social Media</h2>
+	</div>
+	<div class="col-12 social padding">
+		<a href="https://www.facebook.com/Ireland-Tamil-Sangam-236342267223761/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/IreTamilSangam" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/IrelandTamilSangam/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UClpz9HqUMc7FmaKCU6UXs4w" target="_blank"><i class="fab fa-youtube"></i></a>
+	</div>
+</div>
+</div>
+
+<script>
+	/*
+	var dataReload = document.querySelectorAll("[data-reload]");
+	var language8 = {
+	eng: {
+		social: "Connect with us on Social Media."
+		
+	},
+	ta: {
+		social: "எங்கள் சமூக ஊடகத்தைப் பாருங்கள்"
+	}
+};
+
+	var language5 = {
+	eng: {
+		kodaivizha: "Past Events: Kodai Vizha 2020"
+		
+	},
+	ta: {
+		kodaivizha: "கடந்த நிகழ்வுகள்: கோடாய் விசா"
+	}
+};
+var language6 = {
+	eng: {
+		kodaivizhatext: "Kodai Vizha 2020 is a summer festival celebrated by Tamils around the world."
+		
+	},
+	ta: {
+		kodaivizhatext: "கோடை விழாவைக் கொண்டாட எங்களுடன் சேருங்கள்."
+	}
+};
+var language7 = {
+	eng: {
+		kodaivizhabutton: "Learn More"
+		
+	},
+	ta: {
+		kodaivizhabutton: "நிகழ்வைக் காண்க."
+	}
+};
+
+
+var language = {
+	eng: {
+		welcome: "Ireland Tamil Sangam’s mission is to identify all Tamils, to associate and integrate them with us and act as a shelter to promote the well-being of the community with the support of all people. It's aim is to perpetuate, integrate, and assimilate the cultural heritage of Tamil speaking people into Irish culture."
+		
+	},
+	ta: {
+		welcome: "அயர்லாந்து தமிழ் சங்கம் என்பது ஒரு மதசார்பற்ற, அரசியல் அல்லாத, இலாப நோக்கமற்ற, வெளிப்படையான தொண்டு நிறுவனம். இது அயர்லாந்து வாழ் தமிழர்களால், அயர்லாந்தில் வசிக்கும் அனைத்து தமிழர்களையும் “அயர்லாந்து தமிழ்ச் சங்கம்” என்ற ஒரே குடையின் கீழ் ஒருங்கிணைக்க, தமிழ் வருட பிறப்பு தினமான சித்திரை திருநாள் 1ஆம் நாள், 2018 அன்று, நம் தாய்மொழியாம் தமிழ் மொழி பேசும் அனைவரும் இணைந்து செயல்படும் நோக்கில் டப்ளினில் துவக்கப்பட்டது. இது, அயர்லாந்தில் முறைப்படி பதிவு செய்யப்பட்ட, வணிக இலாப நோக்கமற்ற அமைப்பாக செயலாற்றி வருகிறது. அயர்லாந்து தமிழ்ச்சங்கத்தின் குறிக்கோள்:  தமிழர் அனைவரையும் அடையாளம் கண்டு, தமிழ் மொழியால் ஒருங்கிணைந்து அனைத்து மக்களின் ஆதரவுடன் இன நலம் காப்போம்."
+	}
+};
+
+var language2 = {
+	eng: {
+		title: "Ireland Tamil Sangam"
+		
+	},
+	ta: {
+		title: "அயர்லாந்து தமிழ் சங்கம்"
+	}
+};
+
+
+var language3 = {
+	eng: {
+		wecare: "We Care"
+		
+	},
+	ta: {
+		wecare: "நாங்கள் உங்களைப் பற்றி கவலைப்படுகிறோம்."
+	}
+};
+
+var language4 = {
+	eng: {
+		wecaretext: "Our goal is to support all Tamil people in Ireland."
+		
+	},
+	ta: {
+		wecaretext: "அயர்லாந்தில் உள்ள அனைத்து தமிழ் மக்களையும் ஆதரிப்பதே எங்கள் குறிக்கோள்."
+	}
+};
+
+
+if(window.location.hash) {
+	if(window.location.hash === "#ta") {
+		wecare.textContent = language3.ta.wecare;
+	}
+}
+
+if(window.location.hash) {
+	if(window.location.hash === "#ta") {
+		wecaretext.textContent = language4.ta.wecaretext;
+	}
+}
+
+if(window.location.hash) {
+	if(window.location.hash === "#ta") {
+		hi.textContent = language.ta.welcome;
+	}
+}
+
+if(window.location.hash) {
+	if(window.location.hash === "#ta") {
+		title.textContent = language2.ta.title;
+	}
+}
+
+
+if(window.location.hash) {
+	if(window.location.hash === "#ta") {
+		kodaivizha.textContent = language5.ta.kodaivizha;
+	}
+}
+
+if(window.location.hash) {
+	if(window.location.hash === "#ta") {
+		kodaivizhatext.textContent = language6.ta.kodaivizhatext;
+	}
+}
+
+if(window.location.hash) {
+	if(window.location.hash === "#ta") {
+		kodaivizhabutton.textContent = language7.ta.kodaivizhabutton;
+	}
+}
+
+if(window.location.hash) {
+	if(window.location.hash === "#ta") {
+		social.textContent = language8.ta.social;
+	}
+}
+
+		
+function reloadPage() {
+  setTimeout(function () {
+    location.reload();
+  }, 100);
+}
+*/
+</script>
+
+
+
+<!--- Footer -->
+<div class="footer">
+<div class="container-fluid padding">
+<div class="row text-center">
+	<div class="col-12">
+		<div class="FooterContent">
+		<a href="index.html"><img src="img/ITSLOGO2.png" class="footerlogo"></a>
+		<hr class="light">
+		<p>(+353) 894514190</p>
+		<p>IrishTamilSangam@gmail.com</p>
+		<p>70 Wyattville Park</p>
+		<p>Cabinteely Dublin 18</p>
+	</div>
+	<div class="col-12">
+		<hr class="light-100">
+		<h5>©Tamilsangam.ie</h5>
+
+	</div>
+	</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+

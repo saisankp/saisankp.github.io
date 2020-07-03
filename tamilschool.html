@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tamil School</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="myscript.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link rel="shortcut icon" type= "image/png" href="https://i.imgur.com/E6kerC5.png">
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar narvar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/ITSLOGO2.png" class="logo"></a>
+        <!--– TITLE --->
+        <a href="index.html"><img src="img/ITSImage.PNG" class="ITSBanner"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="membership.html">Membership</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        </nav>
+<!--
+        <div class="dropup">
+            <button class="dropbtn">Language</button>
+            <div class="dropup-content">
+                <button onclick="timeFunction()"><a href="#eng" data-reload>English</a></button>
+                <button onclick="timeFunction()"><a href="#ta" data-reload>&nbspTamil&nbsp&nbsp</a></button>
+            </div>
+          </div>
+          -->
+<!---Button to About Page--->
+<div class="centerbutton">
+    <button type="button" class="btn btn-success"><a href="about.html" style="color: black">← Back To About Page</a></button>
+  </div>
+        <h2 style= "font-family: Arima Madurai" class="FAQ" id="title">Tamil School</h2>
+        <hr class="light">
+        <img src="img/TamilSchoolImage.jpeg" class="centerimage">
+        <br>
+        <h3 class="FAQ"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfQ-FJZaUHNw-TrKWrWEbEfC625txOa4sEpG_PckUPVO8t9tA/viewform" target="_blank" id="registerhere">Register Here!</a></h3>   
+        
+        <br><br>
+        <h2 style= "font-family: Arima Madurai" class="FAQ" id="title2">Tamil Books</h2>
+        <hr class="light">
+        <p style= "font-family: Arima Madurai" id="text1" class="FAQ">PDF Files to Download<p>
+
+            <p style= "font-family: Arima Madurai" id="text2" class="FAQ"> 1) 6th Class Tamil Textbook</p>
+            <p style= "font-family: Arima Madurai" id="text3" class="FAQ">2) 7th Class Tamil Textbook</p>
+            
+            <p style= "font-family: Arima Madurai" id="text4" class="FAQ">3) 9th Class Tamil Textbook</p>
+            
+            <p style= "font-family: Arima Madurai" id="text5" class="FAQ">4) 10th Class Tamil Textbook</p>
+            
+            <p style= "font-family: Arima Madurai" id="text6" class="FAQ">5) 11th Class Tamil Textbook</p>
+            
+            <p style= "font-family: Arima Madurai" id="text7" class="FAQ">6) 12th Class Tamil Textbook</p>
+            
+            <p style= "font-family: Arima Madurai" id="text8" class="FAQ">FULL BOOK(6, 7, 9,10, 11, 12)</p>
+            <p style= "font-family: Arima Madurai" id="text9" class="FAQ"><a href="http://www.tnpscjob.in/p/tamil-nadu-679101112-standards-tamil.html" target="_blank"> DOWNLOAD LINK HERE</a></p>
+            
+           
+       
+            <script>
+                var dataReload = document.querySelectorAll("[data-reload]");
+            
+                var language = {
+                eng: {
+                    title: "Tamil School"
+                    
+                },
+                ta: {
+                    title: "தமிழ் கல்வி"
+                }
+            };
+
+            var language2 = {
+                eng: {
+                    registerhere: "Register Here"
+                    
+                },
+                ta: {
+                    registerhere: "இங்கே பதிவு செய்யுங்கள்"
+                }
+            };
+
+            var language3 = {
+                eng: {
+                    title2: "Tamil Books"
+                    
+                },
+                ta: {
+                    title2: "புதிய சமச்சீர் பாடநூல்கள்"
+                }
+            };
+
+            var language4 = {
+                eng: {
+                    text1: "PDF Files to download"
+                    
+                },
+                ta: {
+                    text1: "பதிவிறக்கத்திற்கான பிடியெஃப் கோப்புகள்"
+                }
+            };
+
+            var language5 = {
+                eng: {
+                    text2: "1) 6th Class Tamil Textbook"
+                    
+                },
+                ta: {
+                    text2: "1) 6-ம் வகுப்பு தமிழ் பாடநூல்"
+                }
+            };
+
+            var language6 = {
+                eng: {
+                    text3: "2) 7th Class Tamil Textbook"
+                    
+                },
+                ta: {
+                    text3: "2) 7-ம் வகுப்பு தமிழ் பாடநூல்"
+                }
+            };
+       
+            var language7 = {
+                eng: {
+                    text4: "3) 9th Class Tamil Textbook"
+                    
+                },
+                ta: {
+                    text4: "3) 9-ம் வகுப்பு தமிழ் பாடநூல்"
+                }
+            };
+
+            var language8 = {
+                eng: {
+                    text5: "4) 10th Class Tamil Textbook"
+                    
+                },
+                ta: {
+                    text5: "4) 10-ம் வகுப்பு தமிழ் பாடநூல்"
+                }
+            };
+
+            var language9 = {
+                eng: {
+                    text6: "5) 11th Class Tamil Textbook"
+                    
+                },
+                ta: {
+                    text6: "5) 11-ம் வகுப்பு தமிழ் பாடநூல்"
+                }
+            };
+
+            var language10 = {
+                eng: {
+                    text7: "6) 12th Class Tamil Textbook"
+                    
+                },
+                ta: {
+                    text7: "6) 12-ம் வகுப்பு தமிழ் பாடநூல்"
+                }
+            };
+
+            var language11 = {
+                eng: {
+                    text8: "FULL BOOK(6, 7, 9,10, 11, 12)"
+                    
+                },
+                ta: {
+                    text8: "முழுமையான புத்தகம்(6, 7, 9,10, 11, 12)"
+                }
+            };
+
+            var language12 = {
+                eng: {
+                    text9: "Download Link Here"
+                    
+                },
+                ta: {
+                    text9: "இணைப்பை இங்கே பதிவிறக்கவும்"
+                }
+            };
+
+            var language13 = {
+                eng: {
+                    text10: "Tamil Books"
+                    
+                },
+                ta: {
+                    text10: "புதிய சமச்சீர் பாடநூல்கள்"
+                }
+            };
+            if(window.location.hash) {
+                if(window.location.hash === "#ta") {
+                    title.textContent = language.ta.title;
+                }
+            }
+            
+            if(window.location.hash) {
+                if(window.location.hash === "#ta") {
+                    registerhere.textContent = language2.ta.registerhere;
+                }
+            }
+
+            if(window.location.hash) {
+                if(window.location.hash === "#ta") {
+                    title2.textContent = language3.ta.title2;
+                }
+            }
+
+            if(window.location.hash) {
+                if(window.location.hash === "#ta") {
+                    text1.textContent = language4.ta.text1;
+                }
+            }
+
+            if(window.location.hash) {
+                if(window.location.hash === "#ta") {
+                    text2.textContent = language5.ta.text2;
+                }
+            }
+            if(window.location.hash) {
+                if(window.location.hash === "#ta") {
+                    text3.textContent = language6.ta.text3;
+                }
+            }
+            if(window.location.hash) {
+                if(window.location.hash === "#ta") {
+                    text4.textContent = language7.ta.text4;
+                }
+            }
+            if(window.location.hash) {
+                if(window.location.hash === "#ta") {
+                    text5.textContent = language8.ta.text5;
+                }
+            }
+            if(window.location.hash) {
+                if(window.location.hash === "#ta") {
+                    text6.textContent = language9.ta.text6;
+                }
+            }
+            if(window.location.hash) {
+                if(window.location.hash === "#ta") {
+                    text7.textContent = language10.ta.text7;
+                }
+            }
+            if(window.location.hash) {
+                if(window.location.hash === "#ta") {
+                    text8.textContent = language11.ta.text8;
+                }
+            }
+            if(window.location.hash) {
+                if(window.location.hash === "#ta") {
+                    text9.textContent = language12.ta.text9
+                }
+            }
+            if(window.location.hash) {
+                if(window.location.hash === "#ta") {
+                    text10.textContent = language13.ta.text10;
+                }
+            }
+    
+            function timeFunction() {
+                       setTimeout(function(){ history.go(0); }, 200);
+                     }
+            </script>
+<!--- Connect -->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12"> 
+            <h2 id="social">Connect with us on Social Media</h2>
+        </div>
+        <div class="col-12 social padding">
+            <a href="https://www.facebook.com/Ireland-Tamil-Sangam-236342267223761/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/IreTamilSangam" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/IrelandTamilSangam/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UClpz9HqUMc7FmaKCU6UXs4w" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    </div>
+    <script>
+        var language14 = {
+        eng: {
+            social: "Connect with us on Social Media."
+            
+        },
+        ta: {
+            social: "எங்கள் சமூக ஊடகத்தைப் பாருங்கள்"
+        }
+    };
+    
+    
+    if(window.location.hash) {
+        if(window.location.hash === "#ta") {
+            social.textContent = language14.ta.social;
+        }
+    }
+    </script>
+    <!--- Footer -->
+    <div class="footer">
+    <div class="container-fluid padding">
+    <div class="row text-center">
+        <div class="col-12">
+            <div class="FooterContent">
+            <a href="index.html"><img src="img/ITSLOGO2.png" class="footerlogo"></a>
+            <hr class="light">
+            <p>(+353) 894514190</p>
+            <p>IrishTamilSangam@gmail.com</p>
+            <p>70 Wyattville Park</p>
+            <p>Cabinteely Dublin 18</p>
+        </div>
+        <div class="col-12">
+            <hr class="light-100">
+            <h5>©Tamilsangam.ie</h5>
+    
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+</body>
+</html>
