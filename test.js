@@ -123,3 +123,17 @@ $(function(){
      loadCSS("style.css");
 });
 });
+
+$(function(){
+  $("#ta").click(function(){
+     $("#langauge").text("fam");
+     loadCSS("style.css");
+});
+});
+
+$(function(){
+  $("#en").click(function(){
+     $("#anguage").text("Language");
+     loadCSS("style.css");
+});
+});
