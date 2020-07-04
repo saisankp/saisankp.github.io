@@ -1,4 +1,3 @@
-
 loadCSS = function(href) {
 
     var cssLink = $("<link>");
