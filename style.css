@@ -63,7 +63,7 @@ html, body {
 }
 .nav-link {
   font-size: 1.1em !important;
-  margin-left: 87%;
+  margin-left: 91%;
 }
 
 .nav-link:hover {
@@ -644,10 +644,10 @@ footer a {
 
 /*---Media Queries --*/
 
-@media (max-width: 1222px) {
+@media (max-width: 1198px) {
   .nav-link {
     font-size: 1.1em !important;
-    margin-left: 90%;
+    margin-left: 89%;
   }
 }
 
@@ -683,6 +683,10 @@ footer a {
    height: 150px;
    margin-left: -2%;
   }
+  .nav-link {
+    font-size: 1.1em !important;
+    margin-left: 86%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -703,7 +707,7 @@ footer a {
   }
   .nav-link {
   font-size: 1.1em !important;
-  margin-left: 80%;
+  margin-left: 81%;
 }
 .logo {
   width: 100px;
@@ -746,7 +750,7 @@ footer a {
   }
   .nav-link {
     font-size: 1.1em !important;
-    margin-left: 64%;
+    margin-left: 75%;
   }
   .iframe-container{
     margin: 0 auto;
@@ -758,13 +762,13 @@ footer a {
     }   
 }
 
-@media (max-width: 380px) {
+@media (max-width: 454px) {
   .ITSBanner {
     margin-left: -13%;
   }
   .nav-link {
     font-size: 1.1em !important;
-    margin-left: 65%;
+    margin-left: 64%;
   }
 }
 
@@ -783,6 +787,13 @@ footer a {
   .nav-link {
     font-size: 1.1em !important;
     margin-left: 58%;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav-link {
+    font-size: 1.1em !important;
+    margin-left: 62%;
   }
 }
 
