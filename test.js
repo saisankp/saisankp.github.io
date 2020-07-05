@@ -10,7 +10,7 @@ loadCSS = function(href) {
     });
   };
 
-  //FIRST PAGE TRANSLATION 
+  //------------------------------------------FIRST PAGE TRANSLATION ---------------------------------------------
 $(function(){
     $("#ta").click(function(){
        $("#kodaivizha").html("கடந்த நிகழ்வுகள்: கோடாய் விசா");
@@ -123,16 +123,4 @@ $(function(){
 });
 });
 
-$(function(){
-  $("#ta").click(function(){
-     $("#langauge").text("fam");
-     loadCSS("style.css");
-});
-});
-
-$(function(){
-  $("#en").click(function(){
-     $("#anguage").text("Language");
-     loadCSS("style.css");
-});
-});
+ //------------------------------------------FAQ PAGE TRANSLATION ---------------------------------------------
