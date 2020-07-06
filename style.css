@@ -512,8 +512,10 @@ text-align: center;
 }
 
 
+.card-header, .card-body {
+  font-family: "Arima Madurai";
 
-
+}
 
 
 
