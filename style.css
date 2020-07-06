@@ -17,7 +17,10 @@ html, body {
   margin-left: 5%;
   size: 100%;
 }
-
+.videonormal{
+  width: 560px; 
+  height: 315px;
+}
 .footerlogo {
   width: 120px;
   height: 120px;
@@ -517,7 +520,47 @@ text-align: center;
 
 }
 
+.iframe-container2{
+  margin: 0 auto;
+  text-align: center;
+  }
+ 
+  .iframe-container2 iframe{
+   margin: 0 auto;
+  } 
 
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%; }
+  .gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease; }
+  .gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+  
+  @media (max-width: 450px) {
+  .gallery {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+  -webkit-column-width: 100%;
+  -moz-column-width: 100%;
+  column-width: 100%;
+  }
+  }
+  
+  @media (max-width: 400px) {
+  .btn.filter {
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+  }
+  }
 
 .feedback {
     background-color : green;
@@ -561,6 +604,10 @@ table th {
 }
 
 @media screen and (max-width: 600px) {
+  .videomobile{
+    width: 300px; 
+    height: 215px;
+  }
   .dropup-content2 {
     border-radius: 10px 10px 0px 0px;
     display: none;
@@ -755,7 +802,7 @@ footer a {
     font-size: 1.1em !important;
     margin-left: 75%;
   }
-  .iframe-container{
+  .iframe-container, .iframe-container2{
     margin: 0 auto;
     text-align: center;
     }
@@ -763,6 +810,11 @@ footer a {
       width: 95%;
      margin: 0 auto;
     }   
+    .iframe-container2 iframe{
+      width: 80%;
+      height: 80%;
+     margin: 0 auto;
+    } 
 }
 
 @media (max-width: 454px) {
